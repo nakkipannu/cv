@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #221;
+    color: white;
+    font-family: 'Press Start 2P';
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    line-height: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff090;
+}
+
+li {
+    color: #4FAF44;
+    text-transform: uppercase;
+}
+
+.arrow {
+    position:relative;
+    display: block;
+    color: #F6EB14;
+}
+
+.arrow i {
+    display: none;
+    
+}
+
+.arrow:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.arrow:hover i { 
+    display: block;
+    position: absolute;
+    top: 0.50em; 
+    left: -6em;
+}
+
+.horizontal-scroll {
+    display: flex;
+    flex-direction: row;
+    width: 500vw;
+    height: 100vh;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+#whoami {
+    text-align: center;
+    padding: 50px
+}
+
+#education h3 {
+    text-align: center;
+    padding: 50px;
+}
+
+.coding-skills {
+    width: 50%;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+.progress {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.progress-bar {
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    color: #F6EB14;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+button {
+    font-size: 2rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-bottom: 30px;
+}
+
+button {
+    margin: 10px;
+    background-color: #4FAF44;
+    border: none;
+    color:#F6EB14;
+    font-family: 'Press Start 2P';
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 0px #2E3E1F;
+    padding: 15px 30px;
+}
+
+button:active {
+    box-shadow: 0px 2px 0px #2E3E1F;
+    transform: translateY(2px);
+}
+
+/* Mobiililaitteille pystysuuntainen vieritys */
+@media (max-width: 768px) {
+    /* Navigaation asettelu mobiililaitteelle */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 5px;
+        background-color: #221;
+        opacity: 0.9;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .horizontal-scroll {
+        display: flex;
+        flex-direction: column; /* Muutetaan pystysuuntaiseksi */
+        width: 100vw; /* Muutetaan koko leveys 100vw */
+        height: auto; /* Salli automaattinen korkeus */
+    }
+
+    /* Jokainen section vie koko leveyden */
+    .section {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+
+    #whoami,
+    #education h3 {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .coding-skills {
+        width: 90%;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button {
+        font-size: 1.2rem;
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 5px auto;
+    }
+}
