@@ -118,6 +118,7 @@ input[type="email"],
 textarea,
 button {
     font-size: 2rem;
+    font-family: 'Press Start 2P';
 }
 
 input[type="text"],
@@ -200,6 +201,7 @@ button:active {
     textarea,
     button {
         font-size: 1.2rem;
+        font-family: 'Press Start 2P';
         width: 100%;
         margin: 5px 0;
         padding: 10px;
