@@ -146,6 +146,10 @@ button:active {
 /* Mobiililaitteille pystysuuntainen vieritys */
 @media (max-width: 768px) {
     /* Navigaation asettelu mobiililaitteelle */
+    body {
+        margin-top: 130px;
+    }
+
     .navbar {
         flex-direction: column;
         padding: 15px 5px;
@@ -160,6 +164,7 @@ button:active {
         flex-direction: column; /* Muutetaan pystysuuntaiseksi */
         width: 100vw; /* Muutetaan koko leveys 100vw */
         height: auto; /* Salli automaattinen korkeus */
+        padding: 20px;
     }
 
     /* Jokainen section vie koko leveyden */
@@ -168,6 +173,7 @@ button:active {
         height: auto;
         padding: 20px;
         font-size: 1.5rem;
+        scroll-margin-top: 140px;
     }
 
     #whoami,
@@ -182,6 +188,11 @@ button:active {
 
     .progress-bar {
         width: 100%;
+    }
+
+    .form {
+        margin-top: 30px;
+        margin-bottom: 295px;
     }
 
     input[type="text"],
