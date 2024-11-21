@@ -175,7 +175,6 @@ button:active {
     }
 
     .navbar {
-        flex-direction: column;
         padding: 15px 5px;
         background-color: #221;
         opacity: 0.9;
