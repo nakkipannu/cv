@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* Nollataan marginaalit ja padding, otetaan käyttöön box-sizing: border-box kaikille elementeille */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Perustyylit HTML- ja body-elementeille */
 html, body {
     background-color: #221;
     color: white;
     font-family: 'Press Start 2P';
 }
 
+/* Navigaatio */
 .navbar {
     display: flex;
     justify-content: center;
@@ -25,32 +28,38 @@ html, body {
     z-index: 1000;
 }
 
+/* Linkkien tyylit */
 a {
     text-decoration: none;
     color: #fff090;
 }
 
+/* Luettelokohteiden väri ja tekstin muotoilu */
 li {
     color: #4FAF44;
     text-transform: uppercase;
 }
 
+/* Nuolilinkit */
 .arrow {
     position:relative;
     display: block;
     color: #F6EB14;
 }
 
+/* Piilotetaan nuolikuvake oletuksena */
 .arrow i {
     display: none;
     
 }
 
+/* Hover-efekti nuolilinkeille */
 .arrow:hover {
     cursor: pointer;
     background-color: rgba(0,0,0,0.2);
 }
 
+/* Näytetään nuolikuvake hover-tilassa */
 .arrow:hover i { 
     display: block;
     position: absolute;
@@ -58,6 +67,7 @@ li {
     left: -6em;
 }
 
+/* Vaakasuuntainen vierityskontti */
 .horizontal-scroll {
     display: flex;
     flex-direction: row;
@@ -65,6 +75,7 @@ li {
     height: 100vh;
 }
 
+/* Jokaisen osion (section) tyylit */
 .section {
     width: 100vw;
     height: 100vh;
@@ -72,24 +83,28 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
 }
 
+/* Yksittäiset tyylit #whoami-osiolle */
 #whoami {
     text-align: center;
     padding: 50px
 }
 
+/* Tyylit #education-osion otsikolle */
 #education h3 {
     text-align: center;
     padding: 50px;
 }
 
+/* Tyylit taitotaso-osioille */
 .coding-skills {
     width: 50%;
 }
 
+/* Progress-bar-taustatyylit */
 .progress-bar {
     background-color: #ddd;
     border-radius: 8px;
@@ -97,35 +112,42 @@ li {
     margin-top: 5px;
     width: 100%;
 }
+
+/* Progress-bar täytön tyylit */
 .progress {
     background-color: #4CAF50;
     height: 100%;
     border-radius: 8px;
 }
 
+/* Progress-barin alaosan marginaali */
 .progress-bar {
     margin-bottom: 50px;
 }
 
+/* Lomakkeen tyylit */
 .contact-form {
     display: flex;
     flex-direction: column;
     color: #F6EB14;
 }
 
+/* Lomakekenttien ja painikkeiden tyylit */
 input[type="text"],
 input[type="email"],
 textarea,
 button {
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Press Start 2P';
 }
 
+/* Tekstikenttien marginaalit */
 input[type="text"],
 input[type="email"] {
     margin-bottom: 30px;
 }
 
+/* Painikkeiden tyylit */
 button {
     margin: 10px;
     background-color: #4FAF44;
@@ -139,6 +161,7 @@ button {
     padding: 15px 30px;
 }
 
+/* Painike aktiivisena */
 button:active {
     box-shadow: 0px 2px 0px #2E3E1F;
     transform: translateY(2px);
@@ -173,7 +196,7 @@ button:active {
         width: 100%;
         height: auto;
         padding: 20px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         scroll-margin-top: 140px;
     }
 
