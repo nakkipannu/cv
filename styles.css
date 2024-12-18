@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Nollataan marginaalit ja padding, otetaan käyttöön box-sizing: border-box kaikille elementeille */
+/* Disable margins & paddings, box-sizing border-box to all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Perustyylit HTML- ja body-elementeille */
+/* Basic styles for html css */
 html, body {
     background-color: #221;
     color: white;
     font-family: 'Press Start 2P';
 }
 
-/* Navigaatio */
+/* Navigation */
 .navbar {
     display: flex;
     justify-content: center;
@@ -28,38 +28,38 @@ html, body {
     z-index: 1000;
 }
 
-/* Linkkien tyylit */
+/* Link styles */
 a {
     text-decoration: none;
     color: #fff090;
 }
 
-/* Luettelokohteiden väri ja tekstin muotoilu */
+/* nav items color and text */
 li {
     color: #4FAF44;
     text-transform: uppercase;
 }
 
-/* Nuolilinkit */
+/* arrow pointers */
 .arrow {
     position:relative;
     display: block;
     color: #F6EB14;
 }
 
-/* Piilotetaan nuolikuvake oletuksena */
+/* Hide arrow by default */
 .arrow i {
     display: none;
     
 }
 
-/* Hover-efekti nuolilinkeille */
+/* Hover effect for arrow */
 .arrow:hover {
     cursor: pointer;
     background-color: rgba(0,0,0,0.2);
 }
 
-/* Näytetään nuolikuvake hover-tilassa */
+/* Display arrow in hover */
 .arrow:hover i { 
     display: block;
     position: absolute;
@@ -67,7 +67,7 @@ li {
     left: -6em;
 }
 
-/* Vaakasuuntainen vierityskontti */
+/* Horizontal scrolling */
 .horizontal-scroll {
     display: flex;
     flex-direction: row;
@@ -75,7 +75,7 @@ li {
     height: 100vh;
 }
 
-/* Jokaisen osion (section) tyylit */
+/* Section styles */
 .section {
     width: 100vw;
     height: 100vh;
@@ -87,24 +87,24 @@ li {
     color: white;
 }
 
-/* Yksittäiset tyylit #whoami-osiolle */
+/* Individual style for whomai */
 #whoami {
     text-align: center;
     padding: 50px
 }
 
-/* Tyylit #education-osion otsikolle */
+/* Education header style */
 #education h3 {
     text-align: center;
     padding: 50px;
 }
 
-/* Tyylit taitotaso-osioille */
+/* Coding skills styles */
 .coding-skills {
     width: 50%;
 }
 
-/* Progress-bar-taustatyylit */
+/* Progress-bar styles */
 .progress-bar {
     background-color: #ddd;
     border-radius: 8px;
@@ -113,26 +113,25 @@ li {
     width: 100%;
 }
 
-/* Progress-bar täytön tyylit */
+/* Progress-bar fill */
 .progress {
     background-color: #4CAF50;
     height: 100%;
     border-radius: 8px;
 }
 
-/* Progress-barin alaosan marginaali */
+/* Progress-bar margin */
 .progress-bar {
     margin-bottom: 50px;
 }
 
-/* Lomakkeen tyylit */
+/* Form styles */
 .contact-form {
     display: flex;
     flex-direction: column;
     color: #F6EB14;
 }
 
-/* Lomakekenttien ja painikkeiden tyylit */
 input[type="text"],
 input[type="email"],
 textarea,
@@ -141,13 +140,11 @@ button {
     font-family: 'Press Start 2P';
 }
 
-/* Tekstikenttien marginaalit */
 input[type="text"],
 input[type="email"] {
     margin-bottom: 30px;
 }
 
-/* Painikkeiden tyylit */
 button {
     margin: 10px;
     background-color: #4FAF44;
@@ -161,15 +158,14 @@ button {
     padding: 15px 30px;
 }
 
-/* Painike aktiivisena */
 button:active {
     box-shadow: 0px 2px 0px #2E3E1F;
     transform: translateY(2px);
 }
 
-/* Mobiililaitteille pystysuuntainen vieritys */
+/* Mobile vertical  */
 @media (max-width: 768px) {
-    /* Navigaation asettelu mobiililaitteelle */
+    /* Navigation for mobile */
     body {
         margin-top: 130px;
     }
@@ -184,13 +180,13 @@ button:active {
 
     .horizontal-scroll {
         display: flex;
-        flex-direction: column; /* Muutetaan pystysuuntaiseksi */
-        width: 100vw; /* Muutetaan koko leveys 100vw */
-        height: auto; /* Salli automaattinen korkeus */
+        flex-direction: column; /* Change vertical */
+        width: 100vw; 
+        height: auto; 
         padding: 20px;
     }
 
-    /* Jokainen section vie koko leveyden */
+    /* Section width */
     .section {
         width: 100%;
         height: auto;
