@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- navigointi -->
+<div class="navbar">
+    <ol>
+        <li><a class="arrow" href="#whoami"><i class="fas fa-arrow-alt-right"></i>Whoami</a></li>
+        <li><a class="arrow" href="#education"><i class="fas fa-arrow-alt-right"></i>Education</a></li>
+        <li><a class="arrow" href="#projects"><i class="fas fa-arrow-alt-right"></i>Projects</a></li>
+        <li><a class="arrow" href="#codinglevel"><i class="fas fa-arrow-alt-right"></i>Coding</a></li>
+        <li><a class="arrow" href="#form"><i class="fas fa-arrow-alt-right"></i>Form</a></li>
+    </ol>
+</div>
+
+<div class="horizontal-scroll">
+    <!-- whoami -->
+    <section id="whoami" class="section"><p>I am a self-taught web developer who has gained coding skills through reputable resources like w3schools.org and The Odin Project. My specialization lies in WordPress websites and e-commerce, particularly utilizing Elementor for design and WooCommerce for online store functionality. I have strong skills in HTML (90%), CSS (90%), and a foundational understanding of JavaScript (15%), enabling me to build modern, user-friendly websites.</p></section>
+    <!-- koulutus -->
+    <section id="education" class="section">
+        <h3>Web Production Basics</h3>
+        <ul>
+            <li>Fundamentals of website design and structure</li>
+            <li>Using HTML and CSS for customizing website appearance</li>
+            <li>Principles of usability and responsive design</li>
+        </ul>
+        <h3>Implementing Software with a Component Library (Technical Implementation of E-Commerce)</h3>
+        <ul>
+            <li>Technical solutions for e-commerce and component usage</li>
+            <li>Basics of WooCommerce and other e-commerce tools</li>
+            <li>Using JavaScript and plugins for dynamic content</li>
+        </ul>
+    </section>
+    <!-- progress bar -->
+    <section id="codinglevel" class="section">
+        <div class="coding-skills">
+            <div class="skill">
+                <h4>HTML 90%</h4>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h4>CSS 90%</h4>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h4>JavaScript 10%</h4>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 15%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- lomake -->
+    <section id="form" class="section">
+        <h4>Contact Me</h4>
+        <div class="form">
+            <form action="https://formspree.io/f/mbljyedp" method="POST" class="contact-form">
+                <input type="text" name="_honeypot" style="display:none">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+        
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <button type="submit">Send</button>
+            </form>
+        </div>        
+    </section>
+</div>
+
+</body>
+</html>
